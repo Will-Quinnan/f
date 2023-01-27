@@ -1,7 +1,9 @@
 
+import "./navbar.css"
+
 function Navbar(){
     return (
-        <div>
+        <div className='navbar'>
             menu here
         </div>
     );
