@@ -26,3 +26,29 @@
 .product button{
     margin-top: 20px;
 }
+.addbtn {
+    background: #4c92b0;
+    background-image: -webkit-linear-gradient(top, #4c92b0, #b3cfe0);
+    background-image: -moz-linear-gradient(top, #4c92b0, #b3cfe0);
+    background-image: -ms-linear-gradient(top, #4c92b0, #b3cfe0);
+    background-image: -o-linear-gradient(top, #4c92b0, #b3cfe0);
+    background-image: linear-gradient(to bottom, #4c92b0, #b3cfe0);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .addbtn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }

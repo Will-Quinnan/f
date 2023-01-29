@@ -16,7 +16,7 @@ function Product() {
 
 
             <QuantityPicker></QuantityPicker>
-            <button >add to cart</button>
+            <button className="addbtn" >add to cart</button>
         </div>
     )
 };
