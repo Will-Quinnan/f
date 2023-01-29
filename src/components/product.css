@@ -1,0 +1,28 @@
+.product{
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20%;
+    width: 240px;
+    height: 350;
+    background-color: rgba(241, 241, 241, 0.562);
+}
+.product img{
+    width: 200px;
+    
+    border-radius: 40%;
+}
+.product:hover{
+    border: 1.5px solid rgb(117, 117, 255);
+    background-color: rgb(241, 241, 241);;
+}
+.product .prices{
+    display: flex;
+}
+.product .prices label{
+    flex: 1;
+}
+.product button{
+    margin-top: 20px;
+}
