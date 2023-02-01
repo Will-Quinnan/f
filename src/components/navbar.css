@@ -1,5 +1,6 @@
 .navbar {
-    color: red;
+    color: white;
     border: 1px solid blue;
     display: block;
+    background-color: lightslategray;
 }

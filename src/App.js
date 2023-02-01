@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
 
-      <h1>Hello from React</h1>
+
       <Catalog></Catalog>
 
       <Footer></Footer>

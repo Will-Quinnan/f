@@ -1,0 +1,18 @@
+.catalog{
+    background-color: rgba(158, 247, 217, 0.397);
+}
+h1{
+    background: radial-gradient(rgb(59, 166, 216), rgb(163, 255, 224));
+    color: rgb(153, 255, 170);
+    max-width: fit-content;
+    padding: 30px 35px;
+    margin-left:15%;
+    margin-right: 15%;
+    border-radius: 45%;
+
+    
+}
+h6{
+
+    color: rgb(23, 230, 58)
+}
