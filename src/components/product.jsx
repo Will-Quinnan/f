@@ -1,15 +1,27 @@
 import "./product.css"
 import QuantityPicker from "./quantityPicker";
-import { useEffect } from 'react';
+import { useEffect , useState } from 'react';
 
 function Product(props) {
+    const [quantity, setQuantity] =useState(1)
 
     useEffect(function(){
-        console.log("Hello, I'm a Product")
         console.log(props.data.price)
     }, [] );
 
+    function onQuantityChange(qty){
+        console.log("new value: " + qty)
+        setQuantity(qty);
+    }
 
+    function getTotal(){
+        let total= props.data.price * quantity;
+        return total.toFixed(2);
+    }
+
+    function addToCart(){
+        console.log("Adding " + quantity+ " " + props.data.title + " for $" + getTotal())
+    }
 
     return (
         <div className="product">
@@ -19,16 +31,23 @@ function Product(props) {
             <h5>{props.data.title}</h5>
 
             <div className="prices">
-            <label>${props.data.price?.toFixed(2)}/lb</label>
-            <label>${props.data.price?.toFixed(2)}</label>
+            <label>${ getTotal() }</label>
+            <label>${props.data.price.toFixed(2)}/lb</label>
             </div>
 
 
-            <QuantityPicker></QuantityPicker>
-            <button className="addbtn" >add to cart</button>
+            <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
+            <button className="addbtn"  onClick={addToCart}>add to cart</button>
         </div>
     )
 };
 
 
 export default Product;
+
+
+
+/*
+when the user clicks the Add button
+console log: adding <Title>
+*/
