@@ -6,6 +6,7 @@ function Product(props) {
 
     useEffect(function(){
         console.log("Hello, I'm a Product")
+        console.log(props.data.price)
     }, [] );
 
 
@@ -18,8 +19,8 @@ function Product(props) {
             <h5>{props.data.title}</h5>
 
             <div className="prices">
-            <label>${props.data.price.toFixed(2)}/lb</label>
-            <label>${props.data.price.toFixed(2)}</label>
+            <label>${props.data.price?.toFixed(2)}/lb</label>
+            <label>${props.data.price?.toFixed(2)}</label>
             </div>
 
 

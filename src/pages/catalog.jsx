@@ -5,7 +5,7 @@ import { useEffect , useState } from "react";
 import DataService from "../services/dataService";
 
 function Catalog() {
-    const [products, setProducts]  = useState([1])
+    const [products, setProducts]  = useState([])
 
 
     //when component loads, do something
