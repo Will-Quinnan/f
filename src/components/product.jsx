@@ -22,6 +22,7 @@ function Product(props) {
         return total.toFixed(2);
     }
 
+
     function addToCart(){
         console.log("Adding " + quantity+ " " + props.data.title + " for $" + getTotal())
     }

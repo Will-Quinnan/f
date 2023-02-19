@@ -5,7 +5,9 @@ function GlobalData(props){
     const [cart, setCart] = useState ([])
     const [fakeuser, setFakeUser] = useState ({name: "Will"});
 
-    function addProductsToCart(){}
+    function addProductsToCart(){
+        console.log("Global is called")
+    }
     function removeProductsFromCart(){}
 
 
