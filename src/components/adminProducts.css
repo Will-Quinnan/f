@@ -1,0 +1,18 @@
+.ad-products{
+
+    height: auto;
+    border: 1px solid black;
+
+
+}
+
+.ad-products .my-control{
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 35% ;
+
+}
+.ad-products .add-prod-btn{
+    text-align: center;
+    margin-top: 20px;
+}

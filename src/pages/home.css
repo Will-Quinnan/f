@@ -1,5 +1,11 @@
+html{
+    background-color: rgba(158, 247, 240, 0.397);
+}
+
+
 .home{
     background-color: rgba(158, 247, 240, 0.397);
+    position: relative;
 }
 .home {
     text-align: center;

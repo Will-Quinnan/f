@@ -10,6 +10,7 @@ import NotFound from './pages/404';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Admin from './pages/admin';
+import GlobalData from './store/globalData';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -18,7 +19,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-
+    <GlobalData>
     <BrowserRouter>
 
     <div className="App">
@@ -38,7 +39,7 @@ function App() {
     </div>
 
     </BrowserRouter>
-
+    </GlobalData>
   );
 }
 

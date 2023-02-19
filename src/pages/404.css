@@ -1,5 +1,19 @@
-.notFound img {
-min-width: 100%;
+.notFound {
+    background-color: rgba(0, 255, 234, 0.418);
+}
+.notFound .img {
+    position: relative;
+    text-align: center;
+
+    height: 500px;
 
 
+}
+.notFound .imgtext {
+    background-color: rgba(240, 248, 255, 0);
+    position: absolute;
+    color: aliceblue;
+    max-width: 350px;
+    right: 250px;
+    top: 130px;
 }

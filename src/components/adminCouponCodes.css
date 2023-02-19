@@ -1,0 +1,12 @@
+.couponBox{
+    height: 400px;
+    border: 1px solid black;
+
+
+}
+.couponBox .my-control{
+    text-align: right;
+    margin-right: 35%;
+
+    margin-bottom: 10px;
+}
