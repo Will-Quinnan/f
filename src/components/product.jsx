@@ -29,9 +29,8 @@ function Product(props) {
 
     function handleAdd(){
         console.log("clicked" , props.data);
-        addProductsToCart();
-    }
-
+        addProductsToCart(props.data)
+    };
     return (
         <div className="product">
 

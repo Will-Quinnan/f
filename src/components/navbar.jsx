@@ -3,9 +3,20 @@ import "./navbar.css"
 
 
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import DataContext from "../store/dataContext";
+import ReactDOM from 'react-dom'
+
 
 function Navbar(){
-    return (
+ 
+ 
+  const cart = useContext(DataContext).cart
+
+
+  return (
+
+
 <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
     <Link  className="navbar-brand" to="#">Fish Fillet</Link>
@@ -25,8 +36,10 @@ function Navbar(){
         </li>
       </ul>
       <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
+        
+        <Link to = "/cart" className="btn btn-outline-info"><span className="badge text-bg-light">{cart.length} </span> View Cart</Link>
+
+
       </form>
     </div>
   </div>

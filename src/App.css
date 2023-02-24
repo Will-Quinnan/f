@@ -24,6 +24,11 @@
   color: white;
 }
 
+.App .body {
+  min-height: 1000px;
+  background-color: rgba(158, 247, 217, 0.397);
+}
+
 .App-link {
   color: #61dafb;
 }
