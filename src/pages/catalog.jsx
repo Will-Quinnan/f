@@ -16,10 +16,10 @@ function Catalog() {
         loadCatalog();
     }, [] ) ;
 
-    function loadCatalog(){
+    async function loadCatalog(){
     //get products from the service
         let service = new DataService();
-        let prods = service.getProducts();
+        let prods = 
         setProducts(prods);
         setProdsToDisplay(prods);
 
